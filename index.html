@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример HTML-страницы</title>
+  </head>
+  <body>
+    <h1>Заголовок уровня 1</h1>
+    <h2>Заголовок уровня 2</h2>
+    <h3>Заголовок уровня 3</h3>
+    <h4>Заголовок уровня 4</h4>
+    <h5>Заголовок уровня 5</h5>
+    <h6>Заголовок уровня 6</h6>
+
+    <p>Это <b>жирный</b> текст.</p>
+    <p>Это <em>курсивный</em> текст.</p>
+    <p>
+      Это <b><em>жирный курсивный</em></b> текст.
+    </p>
+    <p>Надстрочный индекс: x<sup>2</sup>.</p>
+    <p>Подстрочный индекс: H<sub>2</sub>O.</p>
+    <blockquote>Это цитата.</blockquote>
+    <p>Пример кода: <code>console.log("Hello, world!");</code></p>
+
+    <ul>
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>
+        Элемент 3
+        <ul>
+          <li>Вложенный элемент 1</li>
+          <li>Вложенный элемент 2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol>
+      <li>Элемент 1</li>
+      <li>Элемент 2</li>
+      <li>
+        Элемент 3
+        <ol>
+          <li>Вложенный элемент 1</li>
+          <li>Вложенный элемент 2</li>
+        </ol>
+      </li>
+    </ol>
+
+    <a href="https://www.example.com">Внешний сайт</a>
+    <a href="images/sticker.jpg" download>Скачать файл</a>
+    <a href="tel:+71234567890">Позвонить</a>
+    <a href="mailto:slahovvsevolod20@gmail.com">Написать</a>
+
+    <div class="photo">
+      <img
+        src="images/sticker.jpg"
+        alt="свин инвокер"
+        height="300"
+        width="300"
+      />
+      <img
+        src="images/delsvin.jpg"
+        alt="деловой свин"
+        height="300"
+        width="300"
+      />
+      <img src="images/mark.jpg" alt="марк" height="300" width="300" />
+    </div>
+    <table border="1">
+      <caption>
+        Пример таблицы
+      </caption>
+      <tr>
+        <th>Заголовок</th>
+        <th>Заголовок</th>
+        <th>Заголовок</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Объединённая ячейка по строкам</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td colspan="2">Объединённая ячейка по столбцам</td>
+      </tr>
+      <tr>
+        <td rowspan="2" colspan="2">Объединённая ячейка по всему</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+      </tr>
+    </table>
+
+    <form action="https://imshef.github.io/" method="post">
+      <legend>Расскажите о себе:</legend>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="bio">О себе:</label>
+      <textarea id="bio" name="bio"></textarea><br />
+
+      <label for="date">Дата:</label>
+      <input type="date" id="date" name="date" /><br />
+
+      <label for="color">Цвет:</label>
+      <input type="color" id="color" name="color" /><br />
+
+      <label for="file">Файл:</label>
+      <input type="file" id="file" name="file" /><br />
+
+      <label>Пол:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Мужской</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Женский</label>
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Другой</label><br />
+
+      <label>Интересы:</label>
+      <input type="checkbox" id="interest1" name="interest1" value="sport" />
+      <label for="interest1">Спорт</label>
+      <input type="checkbox" id="interest2" name="interest2" value="music" />
+      <label for="interest2">Музыка</label><br />
+
+      <label for="city">Город:</label>
+      <select id="city" name="city">
+        <option value="moscow">Москва</option>
+        <option value="spb">Санкт-Петербург</option>
+        <option value="kazan">Казань</option></select
+      ><br />
+
+      <input type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
